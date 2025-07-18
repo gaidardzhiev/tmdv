@@ -17,12 +17,12 @@ A simple and fast Markdown viewer written in C that renders Markdown files direc
 Clone the repo and bild the tool with a C compiler linked to the `md4c` library, then run it with a Markdown file as an argument:
 
 ```
-git clone https://github.com/gaidardzhiev/tmd
-cd tmd
+git clone https://github.com/gaidardzhiev/tmdv
+cd tmdv
 make
 make strip
 make install
-./tmd readme.md
+./tmdv readme.md
 ```
 
 The Markdown content will be displayed with enhanced formatting that improves terminal readability.
