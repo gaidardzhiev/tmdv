@@ -1,0 +1,62 @@
+.TH TMDV 1 "July 18, 2025" "terminal-md-viewer" "User Commands"
+.SH NAME
+tmdv \- terminal markdown viewer that renders Markdown files in the terminal with styling
+
+.SH SYNOPSIS
+.B tmd
+.I <readme.md>
+
+.SH DESCRIPTION
+.TP
+.B tmd
+is a lightweight terminal markdown viewer designed to display Markdown files with formatted output directly in the terminal. It supports headings, lists, blockquotes, code blocks, tables, inline styles (bold, italic, code), and links, providing a readable and colorized rendering without requiring conversion or external viewers.
+.TP
+The tool emphasizes fast rendering and clean terminal output, making it ideal for quick preview of README.md and other Markdown documentation files from the command line.
+
+.SH OPTIONS
+The current version accepts a single argument:
+.TP
+.I <readme.md>
+Path to the Markdown file to be rendered in the terminal.
+
+.SH FEATURES
+.TP
+Headings with different colors and styles based on level (1 to 6)
+.TP
+Unordered and ordered nested lists with proper indentation and numbering
+.TP
+Blockquotes rendered with colored prefix characters
+.TP
+Code blocks and inline code with distinct color highlighting
+.TP
+Tables with simple borders and aligned columns
+.TP
+Basic inline formatting: bold, italic, links
+.TP
+Resets terminal colors correctly after formatting sections
+
+.SH EXIT STATUS
+.TP
+.B 0
+Successful execution.
+.TP
+.B 1
+Failure to open the specified Markdown file or other runtime errors.
+
+.SH EXAMPLES
+.TP
+View a Markdown file:
+.IP
+.sp
+.EX
+tmdv readme.md
+.EE
+
+.SH SEE ALSO
+.BR md4c (3),
+.BR less (1),
+.BR man (1),
+
+.SH LICENSE
+Distributed under the 
+.B GPL3 License.
